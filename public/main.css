@@ -1,0 +1,208 @@
+
+        html {
+            height: 100vh;
+        }
+        
+        body {
+            margin: 0;
+            height: 100%;
+            background: green;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #recipeAndDialogCont{
+          height:100%;
+          width :100%; 
+        }
+        
+        .container {
+            height: 90%;
+            width: 90%;
+            margin: auto;
+        }
+        
+        #recipeContainer {
+            width: 90%;
+            background: #F5F5F5;
+            margin: auto;
+            margin-top: 20px;
+            border: 1px solid red;
+            border-radius: 5px;
+            min-width: 270px;
+        }
+        
+        .recipe {
+            width: 95%;
+            background: #dff0d8;
+            margin-left: 2.5%;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            border-radius: 4px;
+            color: green;
+            box-sizing: border-box;
+        }
+        
+        .recipe > h4:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .recipe:first-child {
+            margin-top: 20px;
+        }
+        
+        .recipe:last-child {
+            margin-bottom: 40px;
+        }
+        
+          
+        
+        button {
+            height: 40px;
+            background: #337ab7;
+            border: 2px solid #337ab7;
+            border-radius: 5px;
+            margin: 20px 5%;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        button:hover {
+            background: #204d74;
+            border: 2px solid #204d74;
+            cursor: pointer;
+        }
+        
+        h4 {
+            padding: 15px;
+            margin: 0px;
+        }
+        
+        .ingredients {
+            background: white;
+            text-align: center;
+            color: black;
+            padding: 10px 3%;
+            display: flex;
+            flex-direction: column;
+            /*                display:none;*/
+        }
+        
+        .ingredientsContainer {
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .ingredientsContainer p {
+            border: 1px solid lightgrey;
+            margin: 0px;
+            padding: 8px;
+        }
+        
+        .buttonContainer {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .danger {
+            background: #c9302c;
+            border: 2px solid #c9302c;
+            flex: 1;
+            max-width: 200px;
+        }
+        
+        .danger:hover {
+            background: #ac2925;
+            border: 2px solid #ac2925;
+        }
+        
+        .default {
+            background: white;
+            border: 2px solid lightgrey;
+            color: black;
+            flex: 1;
+            max-width: 200px;
+        }
+        
+        .default:hover {
+            background: lightgrey;
+        }
+        
+        dialog{
+            border: 1px solid grey;
+            width: 60vw;
+            min-width: 162px;
+        }
+        
+        input, textarea {
+            color: grey;
+            border-radius: 5px;
+        }
+        
+        .flexContWind {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #window h4 {
+            margin: 10px 0px;
+            padding: 0px;
+        }
+        
+        #window input {
+            flex: 1;
+        }
+        
+        .flexContWind hr {
+            flex: 1;
+            /*  A simple flex:1 will not do the trick (see link 5) the margin lines are necessary */
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .flexContWind > h4:last-of-type {
+            margin-top: 30px !important;
+        }
+        #titleFlexContainer {
+            display: flex; 
+            flex-direction: row;   
+        }
+        #titleFlexContainer h3{
+            flex:1; 
+            margin-top:0px;
+        }
+        
+        #titleFlexContainer span{
+           color:darkgrey;
+           height:15px;
+        }
+        #titleFlexContainer span:hover{
+              cursor: pointer;
+              color:black;
+        }
+        
+        .windowButtonContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        
+        textarea{
+            text-align: left;
+        }
+
+        #recipeName{
+          padding-top:20px;
+          padding-left:20px;      
+        }
+
+
+        .hidden{
+          display: none;     
+        }
